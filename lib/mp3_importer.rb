@@ -14,7 +14,7 @@ class MP3Importer
   
   def import
     self.files.each do |song|
-      song.split("-")
+      song
     binding.pry 
   end 
   
