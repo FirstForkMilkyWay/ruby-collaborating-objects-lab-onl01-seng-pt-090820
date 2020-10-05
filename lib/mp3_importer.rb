@@ -12,9 +12,8 @@ class MP3Importer
     @files.delete_if {|file| file == "."|| file == ".."}
   end 
   
-  def import 
-    @path
-    binding.pry 
+  def import
+    Song.new_by_filename
   end 
   
 
