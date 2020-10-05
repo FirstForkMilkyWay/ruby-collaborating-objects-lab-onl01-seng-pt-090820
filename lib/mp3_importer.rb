@@ -13,7 +13,8 @@ class MP3Importer
   end 
   
   def import
-    self.files.each {|song| song}
+    self.files.each do |song|
+      song.split("-")
     Song.new_by_filename
     binding.pry 
   end 
